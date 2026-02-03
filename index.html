@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link rel="shortcut icon" href="../images/todo_favicon.png" type="image/x-icon">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/index.css">
+</head>
+<body>
+    <div id="wrap">
+        <div id="header">
+            <h1><a href="./todo.html">To Do</a></h1>
+            <div id="gnb">
+                <h2><a href="#"><img src="./images/search.png" alt="검색"></a></h2>
+                <h2><a href="#"><img src="./images/menu.png" alt="전체메뉴보기"></a></h2>
+            </div>
+        </div>
+        <div class="tab_menu">
+            <h2><a href="#all_con">All(3)</a></h2>
+            <h2><a href="#">Today(0)</a></h2>
+        </div>
+        <ol class="tab_contents" id="all_con">
+            <li class="contents1">
+                <a href="#" class="date">12.31</a>
+                <a href="#">매일 책 15분 읽기 목표</a>
+            </li>
+            <li class="contents2">
+                <a href="#" class="date">12.31</a>
+                <a href="#">치과 스케일링하기</a>
+            </li>
+            <li class="contents3">
+                <a href="#" class="date">12.31</a>
+                <a href="#">새해 다이어리 구매</a>
+            </li>
+        </ol>
+        <div id="write_box">
+            <p class="contets">add a new task</p>
+            <a href="#" id="confirm_btn"><img src="./images/enter.png" alt="등록하기"></a>
+        </div>
+        <a href="#" id="write_fab"><img src="./images/new_btn_disable.png" alt="새로등록하기"></a>
+    </div>
+    <hr>
+    <!-- 복습용 -->
+    <!-- <div id="wrap">
+        <div id="header">
+            <h1>To Do</h1>
+            <div id="gnb">
+                <h2>검색</h2>
+                <h2>메뉴</h2>
+            </div>
+        </div>
+        <div class="tab_menu">
+            <h2>All</h2>
+            <h2>Today</h2>
+        </div>
+        <div class="tab_list">
+            <div class="list1">
+                <p class="date">12.31</p>
+                <p>치과 스케일링가기<p>
+            </div>
+            <div class="list2">
+                <p class="date">12.31</p>
+                <p>새해 다이어리 구매</p>
+            </div>
+            <div class="list3">
+                <p class="date">12.31</p>
+                <p>매일 책 15분 읽기</p>
+            </div>
+        </div>
+        <div id="new_contents">
+            <p>add a new task</p>
+            <p>등록</p>
+        </div>
+        <h2 id="write_fab">할일 추가</h2>
+    </div> -->
+    <div class="test">
+        <p>test</p>
+        <p>test</p> <!-- shift + alt + 방향키 : 복제 -->
+        <p>test</p> <!-- alt + 방향키 : 위치 조정 -->
+    </div>
+</body>
+</html>
