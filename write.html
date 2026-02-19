@@ -6,11 +6,11 @@
     <meta name="description" content="">
     <meta name="keywords" content="">
     <link rel="shortcut icon" href="../images/todo_favicon.png" type="image/x-icon">
-    <title>To Do List</title>
+    <title>글쓰기 | To Do List</title>
     <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-dynamic-subset.min.css" />
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/common.css">
-    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="./styles/write.css">
 </head>
 <body>
     <div id="wrap">
@@ -28,7 +28,7 @@
         <ol class="tab_contents" id="all_con">
             <li class="contents1 contents">
                 <a href="#" class="date">12.31</a>
-                <a href="./complete.html">매일 책 15분 읽기 목표</a>
+                <a href="#">매일 책 15분 읽기 목표</a>
             </li>
             <li class="contents2 contents">
                 <a href="#" class="date">12.31</a>
@@ -39,7 +39,13 @@
                 <a href="#">새해 다이어리 구매</a>
             </li>
         </ol>
-        <a href="./write.html" id="write_fab"><img src="./images/new_btn_able.png" alt="새로등록하기"></a>
+        <form action="#" method="get" id="write_form">
+            <div id="write_box">
+                <textarea placeholder="add on new task" name="write_contents" id="write_contents"></textarea><!-- 여러 줄 입력창 -->
+                <button type="button" id="confirm_btn" onclick="window.location.href='./new_list.html'"><img src="./images/enter.png" alt="등록하기"></button>
+            </div>
+        </form>
+        <a href="#" id="write_fab"><img src="./images/new_btn_disable.png" alt="새로등록하기"></a>
     </div>
     <hr>
     <!-- 복습용 -->

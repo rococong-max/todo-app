@@ -1,0 +1,69 @@
+/* 통합 디자인 위치 common.css */
+/* 개별 파일별 디자인 금지! */
+body {background-color: rgba(0,0,0,0.15);}
+#wrap {
+    width:440px;
+    height: 95vh; min-height: 956px;
+    margin: 5px auto 0;
+    background-color: #fff;
+    padding: 45px 15px 0;
+}
+#wrap header {
+    overflow: hidden;
+}
+#wrap header h1 {float:left;}
+#wrap header h1 a {
+    font-size: 1.5rem;/* 25px */
+    font-weight: 900;
+}
+#wrap header nav {
+    float:right;
+}
+#wrap header nav a {}
+#wrap header nav a img {}
+#wrap header nav .search {margin-right: 10px;}
+#wrap header nav .search img {}
+#wrap header nav .all_menu {}
+#wrap header nav .all_menu img {}
+#wrap .tab_menu {
+    border-bottom:1px solid #ddd;
+    margin: 10px 0;
+}
+#wrap .tab_menu a {
+    font-size: 1.13rem;/* 18px */ line-height: 41px;/* 글자가 **한 줄**일때 위아래 여백으로 줄 수 있음 */
+    display: inline-block;
+    color: #aaa;
+}
+#wrap .tab_menu .active {font-weight: 600; color: #000;}
+#wrap .tab_menu .all {margin-right: 10px;}
+#wrap .tab_menu .today {}
+#wrap .tab_contents {}
+#wrap .tab_contents .contents {
+    border-bottom: 1px solid #ddd;
+    overflow: hidden;
+}
+#wrap .tab_contents .contents a {
+    float:left;
+    line-height: 50px;
+}
+/* 상태선택자 :hover */
+#wrap .tab_contents .contents a:hover {background-color: #f5f5f5;}/* a에 올렸을 때 a 변화 */
+/* #wrap .tab_contents .contents:hover {background-color: #f5f5f5;} li에 올렸을 때 li 변화 */
+/* #wrap .tab_contents .contents:hover a {background-color: #f5f5f5;} li에 올렸을 때 a 변화*/
+#wrap .tab_contents .contents .date {
+    width: 72px;
+    text-align: center;
+}
+#wrap .tab_contents .contents .date+a {
+    width:calc(100% - 72px);
+}
+#wrap .tab_contents .contents1 {}
+#wrap .tab_contents .contents2 {}
+#wrap .tab_contents .contents3 {}
+#wrap .tab_contents .contents4 {}
+#wrap #write_fab {
+    position: fixed;
+    right:50px; bottom:50px;
+}
+#wrap #write_fab:hover img {filter:brightness(150%) drop-shadow(5px 5px 5px gray) ;}
+#wrap #write_fab img {}

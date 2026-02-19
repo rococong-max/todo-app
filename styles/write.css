@@ -1,0 +1,25 @@
+/* write.css 할 일 작성 */
+#wrap {position: relative;}
+#wrap #write_form {
+    position: absolute;
+    /* absolute 설정 시 주의사항 및 작업 순서 */
+    /* 1. 부모 position 추가 설정 2. 너비 재설정 */
+    top: 250px; left:20px;
+    width: calc(100% - 40px); /* height: 300px; */
+    border: 1px solid #d9d9d9;
+    border-radius: 20px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.7);
+    /* 자식 write_wrap의 세로 값을 부모는 자동으로 따라감 300px */
+}
+#wrap #write_form #write_box {height: 300px;}
+#wrap #write_form #write_box #write_contents {
+    background: none; border: none;
+    width: 100%; height: calc(100% - 24px);
+}
+#wrap #write_form #write_box #confirm_btn {
+    width: 100%; text-align: right;
+}
+#wrap #write_form #write_box #confirm_btn img {}
+#wrap #write_fab {}
+#wrap #write_fab img {}
