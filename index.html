@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/common.css">
     <link rel="stylesheet" href="./styles/index.css">
+    <script src="./scripts/index.js" defer></script>
 </head>
 <body>
     <div id="wrap">
@@ -39,7 +40,15 @@
                 <a href="#">새해 다이어리 구매</a>
             </li>
         </ol>
-        <a href="./write.html" id="write_fab"><img src="./images/new_btn_able.png" alt="새로등록하기"></a>
+        <form action="#" method="get" id="write_form">
+            <div id="write_box">
+                <textarea placeholder="add on new task" name="write_contents" id="write_contents"></textarea><!-- 여러 줄 입력창 -->
+                <button type="button" id="confirm_btn"><img src="./images/enter.png" alt="등록하기"></button>
+                <!-- 에러 메세지 출력 위치1 -->
+                <p class="error"></p><!-- 에러 메세지 출력 위치2 -->
+            </div>
+        </form>
+        <a href="#" id="write_fab"><img src="./images/new_btn_able.png" alt="새로등록하기"></a>
     </div>
     <hr>
     <!-- 복습용 -->
